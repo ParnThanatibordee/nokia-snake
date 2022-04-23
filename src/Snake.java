@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Snake {
     private int headX;
@@ -100,16 +99,8 @@ public class Snake {
         return headX;
     }
 
-    public void setHeadX(int headX) {
-        this.headX = headX;
-    }
-
     public int getHeadY() {
         return headY;
-    }
-
-    public void setHeadY(int headY) {
-        this.headY = headY;
     }
 
     public ArrayList<ArrayList<Integer>> getTail() {

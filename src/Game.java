@@ -85,21 +85,6 @@ public class Game extends JFrame {
             super.paint(g);
             drawDot(g);
             drawSnake(g);
-
-            //for (int row = 0; row < boardSize; row++) {
-            //    for (int col = 0; col < boardSize; col++) {
-            //        paintCell(g, row, col);
-            //    }
-            //}
-        }
-
-        private void paintCell(Graphics g, int row, int col) {
-            int x = col * CELL_PIXEL_SIZE;
-            int y = row * CELL_PIXEL_SIZE;
-
-
-            g.drawRect(x, y, CELL_PIXEL_SIZE, CELL_PIXEL_SIZE);
-
         }
 
         private void drawDot(Graphics g) {
@@ -107,7 +92,6 @@ public class Game extends JFrame {
             int y = dot.getY() * CELL_PIXEL_SIZE;
 
             g.setColor(Color.green);
-            System.out.println(x + " " + y);
             g.fillOval(x, y, CELL_PIXEL_SIZE, CELL_PIXEL_SIZE);
         }
 
