@@ -13,7 +13,7 @@ public class Game extends JFrame {
     private Random random = new Random();
     public static final int CELL_PIXEL_SIZE = 30;
     private Thread thread;
-    private long delayed = 500;
+    private long delayed = 200;
     private boolean gameOver;
     private int staterXSnake = 3;
     private int staterYSnake = 3;
